@@ -1,0 +1,9 @@
+llm:
+  provider: familiar
+  config:
+    model: 'Qwen/Qwen2.5-0.5B-Instruct'
+    temperature: 0.5
+    top_p: 1
+    top_k: 10
+    stream: false
+    trust_remote_code: true
