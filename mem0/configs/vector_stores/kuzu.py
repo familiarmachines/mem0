@@ -13,9 +13,7 @@ config = {
     "vector_store": {
         "provider": "kuzu",
         "config": {
-            "db": "/home/cwong/Projects/familiar/db/mem0-test-cwong.kuzu",
-            "table_name": "Mem0Memory",         # or use alias: collection_name="mem0"
-            "index_name": "mem0_memory_idx",
+            "db": "/tmp/mem0-test.kuzu",
             "embedding_model_dims": 1536,        # MUST match your embedder (alias: embedding_dims)
             "metric": "cosine"                   # or "l2"
         }
