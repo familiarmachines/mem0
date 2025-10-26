@@ -30,7 +30,7 @@ class FamiliarLM(LLMBase):
         super().__init__(config)
 
         if not self.config.model:
-            self.config.model = "Qwen/Qwen2.5-32B-Instruct"
+            self.config.model = "Qwen/Qwen2.5-1.5B-Instruct"
 
     def _parse_response(self, response, tools):
         """
@@ -96,4 +96,8 @@ class FamiliarLM(LLMBase):
             params["tool_choice"] = tool_choice
 
         response = self.client.chat.completions.create(**params)
+        print('================= Params ================')
+        print(json.dumps(params, indent=2).replace('\\n', '\n').replace('\\"', '"'))
+        print('================= Response ================')
+        print(json.dumps(response.model_dump(), indent=2).replace('\\n', '\n').replace('\\"', '"'))
         return self._parse_response(response, tools)
