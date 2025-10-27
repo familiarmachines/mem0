@@ -21,6 +21,8 @@ class BaseEmbedderConfig(ABC):
         ollama_base_url: Optional[str] = None,
         # Openai specific
         openai_base_url: Optional[str] = None,
+        # vLLM specific
+        vllm_base_url: Optional[str] = None,
         # Huggingface specific
         model_kwargs: Optional[dict] = None,
         huggingface_base_url: Optional[str] = None,
@@ -84,6 +86,9 @@ class BaseEmbedderConfig(ABC):
 
         # Ollama specific
         self.ollama_base_url = ollama_base_url
+
+        # vLLM specific
+        self.vllm_base_url = vllm_base_url
 
         # Huggingface specific
         self.model_kwargs = model_kwargs or {}
