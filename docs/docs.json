@@ -24,7 +24,9 @@
                   {
                     "group": "Start Here",
                     "icon": "home",
-                    "pages": ["introduction"]
+                    "pages": [
+                      "introduction"
+                    ]
                   }
                 ]
               },
@@ -69,11 +71,12 @@
                       },
                       {
                         "group": "Advanced Features",
-                        "icon": "sparkles",
+                        "icon": "bolt",
                         "pages": [
                           "platform/features/graph-memory",
                           "platform/features/graph-threshold",
                           "platform/features/advanced-retrieval",
+                          "platform/advanced-memory-operations",
                           "platform/features/criteria-retrieval",
                           "platform/features/contextual-add",
                           "platform/features/custom-instructions"
@@ -103,7 +106,9 @@
                   {
                     "group": "Support & Troubleshooting",
                     "icon": "life-buoy",
-                    "pages": ["platform/faqs", "platform/advanced-memory-operations"]
+                    "pages": [
+                      "platform/faqs"
+                    ]
                   },
                   {
                     "group": "Migration Guide",
@@ -112,6 +117,13 @@
                       "migration/v0-to-v1",
                       "migration/breaking-changes",
                       "migration/api-changes"
+                    ]
+                  },
+                  {
+                    "group": "Contribute",
+                    "icon": "clipboard-list",
+                    "pages": [
+                      "platform/contribute"
                     ]
                   }
                 ]
@@ -133,23 +145,15 @@
                     "icon": "server",
                     "pages": [
                       "open-source/features/overview",
+                      "open-source/features/graph-memory",
+                      "open-source/features/metadata-filtering",
+                      "open-source/features/reranker-search",
                       "open-source/features/async-memory",
-                      "open-source/features/openai_compatibility",
+                      "open-source/features/multimodal-support",
                       "open-source/features/custom-fact-extraction-prompt",
                       "open-source/features/custom-update-memory-prompt",
-                      "open-source/features/multimodal-support",
                       "open-source/features/rest-api",
-                      "open-source/features/metadata-filtering",
-                      "open-source/features/reranking",
-                      "open-source/features/reranker-search"
-                    ]
-                  },
-                  {
-                    "group": "Graph Memory",
-                    "icon": "network-wired",
-                    "pages": [
-                      "open-source/graph_memory/overview",
-                      "open-source/graph_memory/features"
+                      "open-source/features/openai_compatibility"
                     ]
                   },
                   {
@@ -255,6 +259,8 @@
                         "pages": [
                           "components/rerankers/overview",
                           "components/rerankers/config",
+                          "components/rerankers/optimization",
+                          "components/rerankers/custom-prompts",
                           {
                             "group": "Supported Rerankers",
                             "icon": "list",
@@ -263,12 +269,9 @@
                               "components/rerankers/models/sentence_transformer",
                               "components/rerankers/models/huggingface",
                               "components/rerankers/models/llm_reranker",
-                              "components/rerankers/models/llm",
                               "components/rerankers/models/zero_entropy"
                             ]
-                          },
-                          "components/rerankers/optimization",
-                          "components/rerankers/custom-prompts"
+                          }
                         ]
                       }
                     ]
@@ -276,7 +279,10 @@
                   {
                     "group": "Community & Support",
                     "icon": "users",
-                    "pages": ["contributing/development", "contributing/documentation"]
+                    "pages": [
+                      "contributing/development",
+                      "contributing/documentation"
+                    ]
                   }
                 ]
               },
@@ -298,66 +304,72 @@
                 "tab": "Cookbooks",
                 "groups": [
                   {
-                    "group": "Overview",
+                    "group": "Getting Started",
                     "icon": "lightbulb",
-                    "pages": ["examples"]
-                  },
-                  {
-                    "group": "Getting Started Examples",
-                    "icon": "play",
                     "pages": [
-                      "examples/mem0-demo",
-                      "examples/ai_companion_js",
-                      "examples/mem0-with-ollama",
-                      "examples/personal-ai-tutor"
+                      "cookbooks/overview"
                     ]
                   },
                   {
-                    "group": "Production Use Cases",
+                    "group": "Essentials",
+                    "icon": "flag",
+                    "pages": [
+                      "cookbooks/essentials/building-ai-companion",
+                      "cookbooks/essentials/building-ai-with-personality",
+                      "cookbooks/essentials/controlling-memory-ingestion",
+                      "cookbooks/essentials/memory-expiration-short-and-long-term",
+                      "cookbooks/essentials/tagging-and-organizing-memories",
+                      "cookbooks/essentials/exporting-memories",
+                      "cookbooks/essentials/choosing-memory-architecture-vector-vs-graph"
+                    ]
+                  },
+                  {
+                    "group": "Companion Playbooks",
+                    "icon": "users",
+                    "pages": [
+                      "cookbooks/companions/quickstart-demo",
+                      "cookbooks/companions/nodejs-companion",
+                      "cookbooks/companions/ai-tutor",
+                      "cookbooks/companions/travel-assistant",
+                      "cookbooks/companions/youtube-research",
+                      "cookbooks/companions/voice-companion-openai",
+                      "cookbooks/companions/local-companion-ollama"
+                    ]
+                  },
+                  {
+                    "group": "Ops & Automations",
                     "icon": "briefcase",
                     "pages": [
-                      "examples/customer-support-agent",
-                      "examples/personal-travel-assistant",
-                      "examples/email_processing",
-                      "examples/memory-guided-content-writing",
-                      "examples/personalized-deep-research"
+                      "cookbooks/operations/support-inbox",
+                      "cookbooks/operations/email-automation",
+                      "cookbooks/operations/content-writing",
+                      "cookbooks/operations/deep-research",
+                      "cookbooks/operations/team-task-agent"
                     ]
                   },
                   {
-                    "group": "Framework Integrations",
-                    "icon": "puzzle-piece",
+                    "group": "Integrations & Platforms",
+                    "icon": "plug",
                     "pages": [
-                      "examples/llama-index-mem0",
-                      "examples/llamaindex-multiagent-learning-system",
-                      "examples/personalized-search-tavily-mem0",
-                      "examples/mem0-agentic-tool",
-                      "examples/mem0-mastra",
-                      "examples/eliza_os"
+                      "cookbooks/integrations/agents-sdk-tool",
+                      "cookbooks/integrations/openai-tool-calls",
+                      "cookbooks/integrations/mastra-agent",
+                      "cookbooks/integrations/healthcare-google-adk",
+                      "cookbooks/integrations/aws-bedrock",
+                      "cookbooks/integrations/neptune-analytics",
+                      "cookbooks/integrations/tavily-search"
                     ]
                   },
                   {
-                    "group": "Specialized Features",
-                    "icon": "wand-magic-sparkles",
+                    "group": "Frameworks & Multimodal",
+                    "icon": "layers",
                     "pages": [
-                      "examples/multimodal-demo",
-                      "examples/mem0-openai-voice-demo",
-                      "examples/mem0-google-adk-healthcare-assistant",
-                      "examples/collaborative-task-agent"
+                      "cookbooks/frameworks/llamaindex-react",
+                      "cookbooks/frameworks/llamaindex-multiagent",
+                      "cookbooks/frameworks/multimodal-retrieval",
+                      "cookbooks/frameworks/eliza-os-character",
+                      "cookbooks/frameworks/chrome-extension"
                     ]
-                  },
-                  {
-                    "group": "Extensions & Tools",
-                    "icon": "wrench",
-                    "pages": [
-                      "examples/chrome-extension",
-                      "examples/youtube-assistant",
-                      "examples/openai-inbuilt-tools"
-                    ]
-                  },
-                  {
-                    "group": "Cloud & Infrastructure",
-                    "icon": "cloud",
-                    "pages": ["examples/aws_example", "examples/aws_neptune_analytics_hybrid_store"]
                   }
                 ]
               },
@@ -367,7 +379,9 @@
                   {
                     "group": "Overview",
                     "icon": "plug",
-                    "pages": ["integrations"]
+                    "pages": [
+                      "integrations"
+                    ]
                   },
                   {
                     "group": "Agent Frameworks",
@@ -397,7 +411,9 @@
                   {
                     "group": "Cloud & Infrastructure",
                     "icon": "cloud",
-                    "pages": ["integrations/aws-bedrock"]
+                    "pages": [
+                      "integrations/aws-bedrock"
+                    ]
                   },
                   {
                     "group": "Developer Tools",
@@ -419,31 +435,34 @@
                   {
                     "group": "Getting Started",
                     "icon": "rocket",
-                    "pages": ["api-reference", "api-reference/organizations-projects"]
+                    "pages": [
+                      "api-reference",
+                      "api-reference/organizations-projects"
+                    ]
                   },
                   {
                     "group": "Core Memory Operations",
                     "icon": "microchip",
                     "pages": [
                       "api-reference/memory/add-memories",
-                      "api-reference/memory/search-memories",
                       "api-reference/memory/get-memories",
+                      "api-reference/memory/search-memories",
                       "api-reference/memory/update-memory",
                       "api-reference/memory/delete-memory"
                     ]
                   },
                   {
-                    "group": "Advanced Memory APIs",
+                    "group": "Memory APIs",
                     "icon": "sparkles",
                     "pages": [
-                      "api-reference/memory/history-memory",
+                      "api-reference/memory/create-memory-export",
+                      "api-reference/memory/feedback",
                       "api-reference/memory/get-memory",
+                      "api-reference/memory/history-memory",
+                      "api-reference/memory/get-memory-export",
                       "api-reference/memory/batch-update",
                       "api-reference/memory/batch-delete",
-                      "api-reference/memory/delete-memories",
-                      "api-reference/memory/create-memory-export",
-                      "api-reference/memory/get-memory-export",
-                      "api-reference/memory/feedback"
+                      "api-reference/memory/delete-memories"
                     ]
                   },
                   {
@@ -488,8 +507,7 @@
                       "api-reference/webhook/delete-webhook"
                     ]
                   }
-                ],
-                "icon": "square-terminal"
+                ]
               },
               {
                 "tab": "Release Notes",
@@ -497,15 +515,18 @@
                   {
                     "group": "Changelog",
                     "icon": "rocket",
-                    "pages": ["changelog"]
+                    "pages": [
+                      "changelog"
+                    ]
                   },
                   {
                     "group": "Legacy Docs",
                     "icon": "archive",
-                    "pages": ["v0x/introduction"]
+                    "pages": [
+                      "v0x/introduction"
+                    ]
                   }
-                ],
-                "icon": "clock"
+                ]
               }
             ]
           }
@@ -524,7 +545,11 @@
                   {
                     "group": "Getting Started",
                     "icon": "rocket",
-                    "pages": ["v0x/introduction", "v0x/quickstart", "v0x/faqs"]
+                    "pages": [
+                      "v0x/introduction",
+                      "v0x/quickstart",
+                      "v0x/faqs"
+                    ]
                   },
                   {
                     "group": "Core Concepts",
@@ -652,7 +677,6 @@
                     "group": "\ud83d\udca1 Examples",
                     "icon": "lightbulb",
                     "pages": [
-                      "examples",
                       "v0x/examples/mem0-demo",
                       "v0x/examples/ai_companion_js",
                       "v0x/examples/mem0-with-ollama",
@@ -753,6 +777,20 @@
       "appId": "jjv2r0tt"
     }
   },
+  "contextual": {
+    "options": [
+      "copy",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      {
+        "title": "Try in Playground",
+        "description": "Open this example in the interactive Mem0 playground",
+        "icon": "play",
+        "href": "https://app.mem0.ai/playground"
+      }
+    ]
+  },
   "redirects": [
     {
       "source": "/api-reference/memory/v2-search-memories",
@@ -761,6 +799,262 @@
     {
       "source": "/api-reference/memory/v2-get-memories",
       "destination": "/api-reference/memory/get-memories"
+    },
+    {
+      "source": "/quickstart",
+      "destination": "/platform/quickstart"
+    },
+    {
+      "source": "/faqs",
+      "destination": "/platform/faqs"
+    },
+    {
+      "source": "/examples/ai_companion_js",
+      "destination": "/cookbooks/companions/nodejs-companion"
+    },
+    {
+      "source": "/examples/mem0-demo",
+      "destination": "/cookbooks/companions/quickstart-demo"
+    },
+    {
+      "source": "/examples/mem0-with-ollama",
+      "destination": "/cookbooks/companions/local-companion-ollama"
+    },
+    {
+      "source": "/examples/personal-ai-tutor",
+      "destination": "/cookbooks/companions/ai-tutor"
+    },
+    {
+      "source": "/examples/personal-travel-assistant",
+      "destination": "/cookbooks/companions/travel-assistant"
+    },
+    {
+      "source": "/examples/youtube-assistant",
+      "destination": "/cookbooks/companions/youtube-research"
+    },
+    {
+      "source": "/examples/mem0-openai-voice-demo",
+      "destination": "/cookbooks/companions/voice-companion-openai"
+    },
+    {
+      "source": "/examples/customer-support-agent",
+      "destination": "/cookbooks/operations/support-inbox"
+    },
+    {
+      "source": "/examples/email_processing",
+      "destination": "/cookbooks/operations/email-automation"
+    },
+    {
+      "source": "/examples/memory-guided-content-writing",
+      "destination": "/cookbooks/operations/content-writing"
+    },
+    {
+      "source": "/examples/personalized-deep-research",
+      "destination": "/cookbooks/operations/deep-research"
+    },
+    {
+      "source": "/examples/collaborative-task-agent",
+      "destination": "/cookbooks/operations/team-task-agent"
+    },
+    {
+      "source": "/examples/mem0-agentic-tool",
+      "destination": "/cookbooks/integrations/agents-sdk-tool"
+    },
+    {
+      "source": "/examples/openai-inbuilt-tools",
+      "destination": "/cookbooks/integrations/openai-tool-calls"
+    },
+    {
+      "source": "/examples/mem0-mastra",
+      "destination": "/cookbooks/integrations/mastra-agent"
+    },
+    {
+      "source": "/examples/mem0-google-adk-healthcare-assistant",
+      "destination": "/cookbooks/integrations/healthcare-google-adk"
+    },
+    {
+      "source": "/examples/mem0-google-adk-healthcare-assi",
+      "destination": "/cookbooks/integrations/healthcare-google-adk"
+    },
+    {
+      "source": "/examples/aws_example",
+      "destination": "/cookbooks/integrations/aws-bedrock"
+    },
+    {
+      "source": "/examples/aws_neptune_analytics_hybrid_store",
+      "destination": "/cookbooks/integrations/neptune-analytics"
+    },
+    {
+      "source": "/examples/aws_neptune_analytics_hybrid_st",
+      "destination": "/cookbooks/integrations/neptune-analytics"
+    },
+    {
+      "source": "/examples/personalized-search-tavily-mem0",
+      "destination": "/cookbooks/integrations/tavily-search"
+    },
+    {
+      "source": "/examples/llama-index-mem0",
+      "destination": "/cookbooks/frameworks/llamaindex-react"
+    },
+    {
+      "source": "/examples/llamaindex-multiagent-learning-system",
+      "destination": "/cookbooks/frameworks/llamaindex-multiagent"
+    },
+    {
+      "source": "/examples/llamaindex-multiagent-learning-",
+      "destination": "/cookbooks/frameworks/llamaindex-multiagent"
+    },
+    {
+      "source": "/overview",
+      "destination": "/platform/overview"
+    },
+    {
+      "source": "/components/embedders/models/hugging_face",
+      "destination": "/components/embedders/models/huggingface"
+    },
+    {
+      "source": "/components/llms/models/azure_openai_structured",
+      "destination": "/components/llms/models/azure_openai"
+    },
+    {
+      "source": "/components/llms/models/openai_structured",
+      "destination": "/components/llms/models/openai"
+    },
+    {
+      "source": "/components/vectordbs/dbs/azure_ai_search",
+      "destination": "/components/vectordbs/dbs/azure"
+    },
+    {
+      "source": "/components/vectordbs/dbs/upstash_vector",
+      "destination": "/components/vectordbs/dbs/upstash-vector"
+    },
+    {
+      "source": "/components/vectordbs/dbs/vertex_ai_vector_search",
+      "destination": "/components/vectordbs/dbs/vertex_ai"
+    },
+    {
+      "source": "/platform/features/selective-memory",
+      "destination": "/platform/features/custom-instructions"
+    },
+    {
+      "source": "/examples/multimodal-demo",
+      "destination": "/cookbooks/frameworks/multimodal-retrieval"
+    },
+    {
+      "source": "/examples/eliza_os",
+      "destination": "/cookbooks/frameworks/eliza-os-character"
+    },
+    {
+      "source": "/examples/chrome-extension",
+      "destination": "/cookbooks/frameworks/chrome-extension"
+    },
+    {
+      "source": "/examples",
+      "destination": "/cookbooks/overview"
+    },
+    {
+      "source": "/open-source/graph_memory/overview",
+      "destination": "/open-source/features/graph-memory"
+    },
+    {
+      "source": "/open-source/graph_memory/features",
+      "destination": "/open-source/features/graph-memory"
+    },
+    {
+      "source": "/v0x/examples/ai_companion_js",
+      "destination": "/cookbooks/companions/nodejs-companion"
+    },
+    {
+      "source": "/v0x/examples/mem0-demo",
+      "destination": "/cookbooks/companions/quickstart-demo"
+    },
+    {
+      "source": "/v0x/examples/mem0-with-ollama",
+      "destination": "/cookbooks/companions/local-companion-ollama"
+    },
+    {
+      "source": "/v0x/examples/personal-ai-tutor",
+      "destination": "/cookbooks/companions/ai-tutor"
+    },
+    {
+      "source": "/v0x/examples/customer-support-agent",
+      "destination": "/cookbooks/operations/support-inbox"
+    },
+    {
+      "source": "/v0x/examples/personal-travel-assistant",
+      "destination": "/cookbooks/companions/travel-assistant"
+    },
+    {
+      "source": "/v0x/examples/chrome-extension",
+      "destination": "/cookbooks/frameworks/chrome-extension"
+    },
+    {
+      "source": "/v0x/examples/youtube-assistant",
+      "destination": "/cookbooks/companions/youtube-research"
+    },
+    {
+      "source": "/v0x/examples/memory-guided-content-writing",
+      "destination": "/cookbooks/operations/content-writing"
+    },
+    {
+      "source": "/v0x/examples/multimodal-demo",
+      "destination": "/cookbooks/frameworks/multimodal-retrieval"
+    },
+    {
+      "source": "/v0x/examples/email_processing",
+      "destination": "/cookbooks/operations/email-automation"
+    },
+    {
+      "source": "/v0x/examples/personalized-deep-research",
+      "destination": "/cookbooks/operations/deep-research"
+    },
+    {
+      "source": "/v0x/examples/collaborative-task-agent",
+      "destination": "/cookbooks/operations/team-task-agent"
+    },
+    {
+      "source": "/v0x/examples/llama-index-mem0",
+      "destination": "/cookbooks/frameworks/llamaindex-react"
+    },
+    {
+      "source": "/v0x/examples/llamaindex-multiagent-learning-system",
+      "destination": "/cookbooks/frameworks/llamaindex-multiagent"
+    },
+    {
+      "source": "/v0x/examples/personalized-search-tavily-mem0",
+      "destination": "/cookbooks/integrations/tavily-search"
+    },
+    {
+      "source": "/v0x/examples/mem0-agentic-tool",
+      "destination": "/cookbooks/integrations/agents-sdk-tool"
+    },
+    {
+      "source": "/v0x/examples/openai-inbuilt-tools",
+      "destination": "/cookbooks/integrations/openai-tool-calls"
+    },
+    {
+      "source": "/v0x/examples/mem0-openai-voice-demo",
+      "destination": "/cookbooks/companions/voice-companion-openai"
+    },
+    {
+      "source": "/v0x/examples/mem0-google-adk-healthcare-assistant",
+      "destination": "/cookbooks/integrations/healthcare-google-adk"
+    },
+    {
+      "source": "/v0x/examples/mem0-mastra",
+      "destination": "/cookbooks/integrations/mastra-agent"
+    },
+    {
+      "source": "/v0x/examples/eliza_os",
+      "destination": "/cookbooks/frameworks/eliza-os-character"
+    },
+    {
+      "source": "/v0x/examples/aws_example",
+      "destination": "/cookbooks/integrations/aws-bedrock"
+    },
+    {
+      "source": "/v0x/examples/aws_neptune_analytics_hybrid_store",
+      "destination": "/cookbooks/integrations/neptune-analytics"
     }
   ]
 }
